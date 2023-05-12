@@ -1,14 +1,12 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'content-wrapper',
+  selector: 'app-content-wrapper',
   template: `
-    <section class="card">
-      <div class="card-content">
-        <div class="card-title">I wrap content</div>
-        <ng-content></ng-content>
-      </div>
-    </section>
+    <article>
+      <header>I wrap content</header>
+      <ng-content></ng-content>
+    </article>
   `
 })
 export class ContentWrapperComponent {}
