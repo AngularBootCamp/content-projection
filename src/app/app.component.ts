@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 
+import { ContentWrapperComponent } from './content-wrapper.component';
+
 @Component({
   selector: 'app-root',
   template: `
@@ -13,6 +15,8 @@ import { Component } from '@angular/core';
     <app-content-wrapper>
       Here's another block of transcluded text.
     </app-content-wrapper>
-  `
+  `,
+  standalone: true,
+  imports: [ContentWrapperComponent]
 })
 export class AppComponent {}
